@@ -1,4 +1,4 @@
-﻿namespace ReadLine2.Web.Resources
+﻿namespace Localization.Web.Resources
 {
     public class SharedResource
     {

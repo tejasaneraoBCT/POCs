@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ReadLine2.Web.Pages
+namespace Localization.Web.Pages
 {
     public class PrivacyModel : PageModel
     {

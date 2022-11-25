@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ReadLine2.Web.Model
+namespace Localization.Web.Model
 {
     public class Category
     {

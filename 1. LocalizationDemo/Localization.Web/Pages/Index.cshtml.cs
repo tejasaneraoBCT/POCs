@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Localization;
-using ReadLine2.Web.Resources;
+using Localization.Web.Resources;
 
-namespace ReadLine2.Web.Pages
+namespace Localization.Web.Pages
 {
     public class IndexModel : PageModel
     {

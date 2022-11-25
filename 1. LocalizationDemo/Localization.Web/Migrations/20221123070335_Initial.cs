@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ReadLine2.Web.Migrations
+namespace Localization.Web.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
-using ReadLine2.Web.Data;
+using Localization.Web.Data;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);

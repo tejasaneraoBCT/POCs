@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ReadLine2.Web.Model;
+using Localization.Web.Model;
 using System.Collections.Generic;
 
-namespace ReadLine2.Web.Data
+namespace Localization.Web.Data
 {
     public class ApplicationDbContext: DbContext
     {
