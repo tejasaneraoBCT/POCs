@@ -1,0 +1,47 @@
+﻿@page
+@using Microsoft.Extensions.Localization;
+@using ReadLine2.Web.Pages.Categories;
+@model ReadLine2.Web.Pages.Categories.IndexModel
+@inject IStringLocalizer<IndexModel> Localizer
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">@Localizer["CategoriesListHeading"]</h2>
+        </div>
+        <div class="col-6">
+            <a asp-page="create" class="btn btn-success">@Localizer["AddCategoryButtonLabel"]</a>
+        </div>
+    </div>
+    <br />
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                    @Localizer["NameLabel"]
+                </th>
+                <th>
+                    @Localizer["DescriptionLabel"]
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Model.Categories)
+            {
+                <tr width="50%">
+                    <td>
+                        @category.Name
+                    </td>
+                    <td>
+                        @category.Description
+                    </td>
+                </tr>
+                <tr width="50%"></tr>
+            }
+        </tbody>
+    </table>
+</div>

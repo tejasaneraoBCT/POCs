@@ -1,0 +1,13 @@
+﻿@page
+@using Microsoft.Extensions.Localization;
+@using ReadLine2.Web.Resources;
+@model IndexModel
+@inject IStringLocalizer<IndexModel> Localizer
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Localizer["Message"]</h1>
+    <p>@Localizer["Heading2"]</p>
+</div>
