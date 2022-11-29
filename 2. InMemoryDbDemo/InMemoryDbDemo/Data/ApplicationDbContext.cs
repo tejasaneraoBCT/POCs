@@ -11,11 +11,8 @@ namespace InMemoryDbDemo.Data
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            SeedData();
+
         }
 
-        public void SeedData()
-        {
-        }
     }
 }

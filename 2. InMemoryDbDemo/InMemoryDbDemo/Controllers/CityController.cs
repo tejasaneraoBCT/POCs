@@ -24,7 +24,7 @@ namespace InMemoryDbDemo.Controllers
         public async Task<ActionResult<City>> GetCityByIdAsync([FromRoute] int id)
         {
             var city = await _cityRepo.GetCityByIdAsync(id);
-            if(city == null)
+            if (city == null)
             {
                 return NotFound();
             }
@@ -42,7 +42,19 @@ namespace InMemoryDbDemo.Controllers
         public async Task<ActionResult<City>> AddCityAsync(City city)
         {
             var newCity = await _cityRepo.AddCityAsync(city);
-            return CreatedAtRoute("GetCityById", new {id = city.Id},city);
+            return CreatedAtRoute("GetCityById", new { id = city.Id }, city);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteCityAsync([FromRoute] int id)
+        {
+            var cityExists = await _cityRepo.GetCityByIdAsync(id);
+            if(cityExists == null)
+            {
+                return NotFound("City Not Found");
+            }
+            var result = await _cityRepo.DeleteCityAsync(id);
+            return NoContent();
         }
     }
 }

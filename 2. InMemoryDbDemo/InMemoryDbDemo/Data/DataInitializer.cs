@@ -15,7 +15,7 @@ namespace InMemoryDbDemo.Data
                     new PointOfInterest
                     {
                         Name = "Shaniwar Wada",
-                        Description = "Lorema sadasdi oasido noiasdoi oiasdhiuhne oaishd"
+                        Description = "Shaniwar Wada a 13 storey palace of Peshwas was built by Bajirao-I, in the year 1736.It was head quarter of the Peshwas and it symbolizes Pune's culture. The structure was built giving security the highest priority. The main entrance is known as 'Delhi Darwaja' & others have names like Ganesh, Mastani, Jambhal, Khidki."
                     }
                 }
             });

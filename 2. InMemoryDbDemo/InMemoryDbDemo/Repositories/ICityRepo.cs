@@ -8,5 +8,6 @@ namespace InMemoryDbDemo.Repositories
         Task<IEnumerable<PointOfInterest>> GetPointsOfInterestAsync();
         Task<City> GetCityByIdAsync(int id);
         Task<City> AddCityAsync(City city);
+        Task<bool> DeleteCityAsync(int id);
     }
 }
