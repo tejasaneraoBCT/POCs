@@ -1,0 +1,82 @@
+﻿@page
+@model FormHandling.Pages.RegisterModel
+@{
+}
+
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<form method="post">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.User.FirstName">First Name</label>
+            <input asp-for="@Model.User.FirstName" type="text" class="form-control" id="inputFName" placeholder="First Name">
+            <span asp-validation-for="@Model.User.FirstName" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.User.LastName">Last Name</label>
+            <input asp-for="@Model.User.LastName" type="text" class="form-control" id="inputLName" placeholder="Last Name">
+            <span asp-validation-for="@Model.User.LastName" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.User.Email">Email</label>
+            <input asp-for="@Model.User.Email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <span asp-validation-for="@Model.User.Email" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.User.Password">Password</label>
+            <input asp-for="@Model.User.Password" type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            <span asp-validation-for="@Model.User.Password" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.User.DateOfBirth">Date of Birth</label>
+            <input asp-for="@Model.User.DateOfBirth" type="date" class="form-control" id="inputDob" placeholder="Date of Birth">
+            <span asp-validation-for="@Model.User.DateOfBirth" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.User.Gender">Gender</label>
+            <div class="form-control">
+                <label class="radio-inline">
+                    <input asp-for="@Model.User.Gender" type="radio" value="M">
+                    Male
+                </label>
+                <label class="radio-inline">
+                    <input asp-for="@Model.User.Gender" type="radio" value="F">
+                    Female
+                </label>
+                <label class="radio-inline">
+                    <input asp-for="@Model.User.Gender" type="radio" value="N">
+                    Other
+                </label>
+            </div>
+            <span asp-validation-for="@Model.User.Gender" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.User.City">City</label>
+            <input asp-for="@Model.User.City" type="text" class="form-control" id="inputCity">
+            <span asp-validation-for="@Model.User.City" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.User.State">State</label>
+            <select asp-for="@Model.User.State" id="inputState" class="form-control">
+                <option value="" disabled selected>Choose the state</option>
+                <option>Maharashtra</option>
+            </select>
+            <span asp-validation-for="@Model.User.State" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-2">
+            <label asp-for="@Model.User.ZipCode">Zip</label>
+            <input asp-for="@Model.User.ZipCode" type="text" class="form-control" id="inputZip">
+            <span asp-validation-for="@Model.User.ZipCode" class="text-danger"></span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
