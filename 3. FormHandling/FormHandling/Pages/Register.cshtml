@@ -40,7 +40,7 @@
         </div>
         <div class="form-group col-md-6">
             <label asp-for="@Model.User.Gender">Gender</label>
-            <div class="form-control">
+            <div class="">
                 <label class="radio-inline">
                     <input asp-for="@Model.User.Gender" type="radio" value="M">
                     Male
@@ -79,4 +79,10 @@
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Sign in</button>
+
+    @if (TempData["User"] != null)
+    {
+        <h1>User Submitted</h1>
+        <partial name="_UserCard" model="@TempData["User"]" />
+    }
 </form>
