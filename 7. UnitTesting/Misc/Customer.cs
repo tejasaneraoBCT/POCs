@@ -12,5 +12,11 @@ namespace Misc
         {
             return $"Hello, {name}";
         }
+
+
+        public override string ToString()
+        {
+            return "Customer Name";
+        }
     }
 }

@@ -11,6 +11,14 @@ namespace MiscNUnitTest
     [TestFixture]
     public class CalculatorNUnitTests
     {
+        private Calculator Calculator;
+
+        [SetUp]
+        public void Setup()
+        {
+            Calculator = new Calculator();
+        }
+
         [Test]
         [TestCase(5.55,1.15)]
         [TestCase(5.55,1.16)]
@@ -18,10 +26,10 @@ namespace MiscNUnitTest
         public void AddNumbers_InputTwoDouble_GetCorrectResult(double x, double y)
         {
             // Arrange
-            Calculator calculator = new Calculator();
+            //Calculator calculator = new Calculator();
 
             // Act
-            var result = calculator.AddNumbers(x, y);
+            var result = Calculator.AddNumbers(x, y);
 
             // Assert
             // NUnit way
@@ -36,10 +44,10 @@ namespace MiscNUnitTest
         [TestCase(9)]
         public void IsOdd_InputOddNumber_ReturnsTrue(int x)
         {
-            Calculator calculator = new Calculator();
+            //Calculator calculator = new Calculator();
 
             // Act
-            var result = calculator.IsOdd(x);
+            var result = Calculator.IsOdd(x);
 
             // Assert
             Assert.That(result, Is.EqualTo(true));
@@ -51,10 +59,10 @@ namespace MiscNUnitTest
         [TestCase(0)]
         public void IsOdd_InputEvenNumber_ReturnsFalse(int x)
         {
-            Calculator calculator = new Calculator();
+            //Calculator calculator = new Calculator();
 
             // Act
-            var result = calculator.IsOdd(x);
+            var result = Calculator.IsOdd(x);
 
             // Assert
             Assert.That(result, Is.EqualTo(false));
@@ -67,8 +75,8 @@ namespace MiscNUnitTest
         [TestCase(8, ExpectedResult = false)]
         public bool IsOdd_InputNumber_ReturnsTrueIfOdd(int x)
         {
-            Calculator calculator = new Calculator();
-            return calculator.IsOdd(x);
+            //Calculator calculator = new Calculator();
+            return Calculator.IsOdd(x);
         }
     }
 }
