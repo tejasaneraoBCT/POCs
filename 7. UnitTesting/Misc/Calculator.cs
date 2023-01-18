@@ -12,5 +12,10 @@ namespace Misc
         {
             return x + y;
         }
+
+        public bool IsOdd(int x)
+        {
+            return x % 2 != 0;
+        }
     }
 }
