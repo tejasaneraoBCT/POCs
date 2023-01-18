@@ -1,5 +1,4 @@
 using HR.LeaveManagement.Application;
-using HR.LeaveManagement.Infrastructure;
 using HR.LeaveManagement.Persistence;
 using Microsoft.Extensions.Configuration;
 
@@ -9,7 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.ConfigureApplicationServices();
-builder.Services.ConfigureInfrastructureServices(builder.Configuration);
 builder.Services.ConfigurePersistenceServices(builder.Configuration);
 builder.Services.AddCors(o =>
 {
