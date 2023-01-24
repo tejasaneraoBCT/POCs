@@ -1,4 +1,5 @@
 ﻿using Misc;
+using NuGet.Frameworks;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -20,9 +21,9 @@ namespace MiscNUnitTest
         }
 
         [Test]
-        [TestCase(5.55,1.15)]
-        [TestCase(5.55,1.16)]
-        [TestCase(5.55,1.14)]
+        [TestCase(5.55, 1.15)]
+        [TestCase(5.55, 1.16)]
+        [TestCase(5.55, 1.14)]
         public void AddNumbers_InputTwoDouble_GetCorrectResult(double x, double y)
         {
             // Arrange
@@ -77,6 +78,29 @@ namespace MiscNUnitTest
         {
             //Calculator calculator = new Calculator();
             return Calculator.IsOdd(x);
+        }
+
+        [Test]
+        public void OddRange()
+        {
+            List<int> expectedRange = new List<int> { 5, 7, 9 };
+
+            var result = Calculator.OddRange(5, 10);
+
+            // Multiple Checks
+            Assert.Multiple(() =>
+            {
+                Assert.That(expectedRange, Is.EquivalentTo(result));
+                //Assert.That(expectedRange, Does.Contain(7));
+                //Assert.That(expectedRange, Is.Not.Empty);
+                //Assert.That(expectedRange.Count, Is.EqualTo(3));
+                //Assert.That(expectedRange, Has.No.Member(6));
+                //Assert.That(expectedRange, Is.Ordered); // Whether collection is ordered
+                //Assert.That(expectedRange, Is.Unique); // Contains unique Items
+                //Assert.That(expectedRange.Count, Is.InRange(2, 5));
+            });
+
+
         }
     }
 }

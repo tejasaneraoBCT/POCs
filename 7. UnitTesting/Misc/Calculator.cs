@@ -17,5 +17,16 @@ namespace Misc
         {
             return x % 2 != 0;
         }
+
+        public List<int> OddRange(int min, int max)
+        {
+            List<int> range = new List<int>();
+
+            for (int i = min; i <= max; i++  ){
+                if (i % 2 != 0) range.Add(i);
+            }
+
+            return range;
+        }
     }
 }
