@@ -26,15 +26,15 @@ namespace Misc
 
         public bool Withdrawal(int amount)
         {
-            if ((Balance - amount) >= 0)
+            if (Balance >= amount)
             {
+                _logBook.LogToDb($"INR {amount} has been debited from your account");
                 Balance -= amount;
-                _logBook.Log($"INR {amount} where debited from your account");
-                return true;
+                return _logBook.LogBalanceAfterWithdrawal(Balance);
             }
 
-            _logBook.Log($"Debit transaction of INR {amount} failed due to insufficient balance");
-            return false;
+            //_logBook.Log($"Debit transaction of INR {amount} failed due to insufficient balance");
+            return _logBook.LogBalanceAfterWithdrawal(Balance);
         }
 
         public int GetBalance() => Balance;
