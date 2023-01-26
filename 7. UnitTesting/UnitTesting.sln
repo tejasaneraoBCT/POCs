@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misc", "Misc\Misc.csproj", "{F81CB340-A4A9-43CE-8771-D5412AF21B88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Misc", "Misc\Misc.csproj", "{F81CB340-A4A9-43CE-8771-D5412AF21B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiscMSTest", "MiscMSTest\MiscMSTest.csproj", "{42FAF366-E8CF-4EC8-BF0D-FA4CE12B844F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiscMSTest", "MiscMSTest\MiscMSTest.csproj", "{42FAF366-E8CF-4EC8-BF0D-FA4CE12B844F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiscNUnitTest", "MiscNUnitTest\MiscNUnitTest.csproj", "{7E799216-0044-41C8-9EA5-A39B4DCD952D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiscNUnitTest", "MiscNUnitTest\MiscNUnitTest.csproj", "{7E799216-0044-41C8-9EA5-A39B4DCD952D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiscXUnitTest", "MiscXUnitTest\MiscXUnitTest.csproj", "{F2B26515-80C5-4DEA-AB9D-D9128A9160E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{7E799216-0044-41C8-9EA5-A39B4DCD952D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E799216-0044-41C8-9EA5-A39B4DCD952D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E799216-0044-41C8-9EA5-A39B4DCD952D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B26515-80C5-4DEA-AB9D-D9128A9160E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B26515-80C5-4DEA-AB9D-D9128A9160E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B26515-80C5-4DEA-AB9D-D9128A9160E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B26515-80C5-4DEA-AB9D-D9128A9160E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
