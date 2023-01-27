@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiscMSTest", "MiscMSTest\Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiscNUnitTest", "MiscNUnitTest\MiscNUnitTest.csproj", "{7E799216-0044-41C8-9EA5-A39B4DCD952D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiscXUnitTest", "MiscXUnitTest\MiscXUnitTest.csproj", "{F2B26515-80C5-4DEA-AB9D-D9128A9160E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiscXUnitTest", "MiscXUnitTest\MiscXUnitTest.csproj", "{F2B26515-80C5-4DEA-AB9D-D9128A9160E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basics", "Basics", "{48AEAF5B-B1C5-4C98-BA89-9B14815ACE67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F81CB340-A4A9-43CE-8771-D5412AF21B88} = {48AEAF5B-B1C5-4C98-BA89-9B14815ACE67}
+		{42FAF366-E8CF-4EC8-BF0D-FA4CE12B844F} = {48AEAF5B-B1C5-4C98-BA89-9B14815ACE67}
+		{7E799216-0044-41C8-9EA5-A39B4DCD952D} = {48AEAF5B-B1C5-4C98-BA89-9B14815ACE67}
+		{F2B26515-80C5-4DEA-AB9D-D9128A9160E6} = {48AEAF5B-B1C5-4C98-BA89-9B14815ACE67}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8196A171-D349-481B-9F14-5D5B36B3B54F}
