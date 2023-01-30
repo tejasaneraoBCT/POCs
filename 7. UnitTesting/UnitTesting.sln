@@ -15,13 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basics", "Basics", "{48AEAF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{2D502EC1-3BD8-4859-9AD7-6CEE948ED867}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.Core", "Bongo_InitialSetup (.NET 6)\Bongo.Core\Bongo.Core.csproj", "{F8167A9D-FB7E-42C0-B574-B57F03632DDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.Core", "Bongo.App\Bongo.Core\Bongo.Core.csproj", "{F8167A9D-FB7E-42C0-B574-B57F03632DDD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.DataAccess", "Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\Bongo.DataAccess.csproj", "{E6D967EC-3091-4B0A-8167-AF7E411A8514}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.DataAccess", "Bongo.App\Bongo.DataAccess\Bongo.DataAccess.csproj", "{E6D967EC-3091-4B0A-8167-AF7E411A8514}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.Models", "Bongo_InitialSetup (.NET 6)\Bongo.Models\Bongo.Models.csproj", "{BF5A8CF3-0F17-4AB4-A1D2-1964ACF857F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.Models", "Bongo.App\Bongo.Models\Bongo.Models.csproj", "{BF5A8CF3-0F17-4AB4-A1D2-1964ACF857F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.Web", "Bongo_InitialSetup (.NET 6)\Bongo.Web\Bongo.Web.csproj", "{E14A2B60-8D98-4BB2-ADAC-E67BB2FE33AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.Web", "Bongo.App\Bongo.Web\Bongo.Web.csproj", "{E14A2B60-8D98-4BB2-ADAC-E67BB2FE33AF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bongo.Models.Tests", "Bongo.Models.Tests\Bongo.Models.Tests.csproj", "{8E6245B1-9017-4290-989D-297863169D44}"
 EndProject

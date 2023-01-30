@@ -1,13 +1,9 @@
-﻿using Bongo.DataAccess.Repository;
-using Bongo.Models.Model;
+﻿using Bongo.Models.Model;
 using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Bongo.DataAccess;
+using Bongo.DataAccess.Repository;
 
 namespace Bongo.DataAccess.Tests
 {

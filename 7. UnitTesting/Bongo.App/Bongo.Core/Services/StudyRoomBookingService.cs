@@ -1,13 +1,10 @@
 ﻿using Bongo.Core.Services.IServices;
-using Bongo.DataAccess.Repository;
 using Bongo.DataAccess.Repository.IRepository;
 using Bongo.Models.Model;
 using Bongo.Models.Model.VM;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Bongo.Core.Services
 {

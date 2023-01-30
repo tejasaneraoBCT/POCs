@@ -18,6 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bongo.App\Bongo.DataAccess\Bongo.DataAccess.csproj" />
+    <ProjectReference Include="..\Bongo.App\Bongo.Models\Bongo.Models.csproj" />
     <ProjectReference Include="..\Bongo_InitialSetup (.NET 6)\Bongo.DataAccess\Bongo.DataAccess.csproj" />
     <ProjectReference Include="..\Bongo_InitialSetup (.NET 6)\Bongo.Models\Bongo.Models.csproj" />
   </ItemGroup>
